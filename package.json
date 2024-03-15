@@ -5,8 +5,9 @@
   "scripts": {
     "nx": "nx",
     "start": "nx run app:serve",
-    "gc": "nx g c --standalone --project=components"
-    
+    "gc": "nx g c --standalone --project=components",
+    "test": "yarn nx test app",
+    "test:components": "yarn nx test components"
   },
   "private": true,
   "dependencies": {
