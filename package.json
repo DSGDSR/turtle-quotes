@@ -2,7 +2,10 @@
   "name": "@./source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "nx": "nx",
+    "start": "nx run app:serve"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~17.1.0",
