@@ -10,14 +10,27 @@
     button {
         background-color: $primary;
         color: $text;
-        padding: .7em 1em;
         border-radius: $radius;
         font-weight: 500;
-        font-size: 1.1rem;
 
         &:hover {
             opacity: .85;
             transition-duration: 200ms;
         }
+    }
+
+    .small {
+        padding: .5em .8em;
+        font-size: .9rem;
+    }
+
+    .default {
+        padding: .6em .9em;
+        font-size: 1.1rem;
+    }
+
+    .large {
+        padding: .6em 1em;
+        font-size: 1.3rem;
     }
 }

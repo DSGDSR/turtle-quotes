@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ButtonComponent } from '@components';
+import { ButtonComponent, ButtonVariant } from '@components';
 
 @Component({
   standalone: true, 
@@ -17,9 +17,9 @@ import { ButtonComponent } from '@components';
 })
 export class AppComponent {
   title = 'app';
+  public buttonVariants = ButtonVariant
 
   public buttonClicked(): void {
     console.log('button');
-    
   }
 }

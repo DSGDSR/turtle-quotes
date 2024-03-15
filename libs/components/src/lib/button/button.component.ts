@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ButtonTarget } from './button.enum';
+import { CommonModule, NgClass } from '@angular/common';
+import { ButtonTarget, ButtonVariant } from './button.enum';
 
 @Component({
   selector: 'tq-button',
@@ -12,6 +12,7 @@ import { ButtonTarget } from './button.enum';
 export class ButtonComponent {
   @Input() href!: string;
   @Input() target: ButtonTarget = ButtonTarget.Self;
+  @Input() variant!: ButtonVariant;
 
   @Output() action = new EventEmitter<string>();
 
