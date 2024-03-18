@@ -1,15 +1,15 @@
 <ng-container *ngIf="href; else buttonTemplate">
     <a [target]="target" [href]="href" (click)="onClick()" [ngClass]="variant">
-        <ng-container *ngTemplateOutlet="linkTemplate" />
+        <ng-container *ngTemplateOutlet="textContentTemplate" />
     </a>
 </ng-container>    
 
 <ng-template #buttonTemplate>
     <button (click)="onClick()" [ngClass]="variant">
-        <ng-container *ngTemplateOutlet="linkTemplate" />
+        <ng-container *ngTemplateOutlet="textContentTemplate" />
     </button>
 </ng-template>
 
-<ng-template #linkTemplate>
+<ng-template #textContentTemplate>
     <ng-content />
 </ng-template>
