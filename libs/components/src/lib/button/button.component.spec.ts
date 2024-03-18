@@ -22,10 +22,6 @@ describe('ButtonComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  describe('Template', () => {
-
-  })
-
   describe('Methods', () => {
     describe('onClick', () => {
       it('should call onClick function when button is clicked', () => {
