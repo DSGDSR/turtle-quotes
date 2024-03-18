@@ -6,8 +6,10 @@
     "nx": "nx",
     "start": "nx run app:serve",
     "gc": "nx g c --standalone --project=components",
-    "test": "yarn nx test app",
-    "test:components": "yarn nx test components"
+    "test": "nx test app",
+    "test:c": "nx test app --coverage",
+    "test:components": "nx test components",
+    "test:components:c": "nx test components --coverage"
   },
   "private": true,
   "dependencies": {
