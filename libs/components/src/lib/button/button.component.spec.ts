@@ -1,9 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ButtonComponent } from './button.component';
+import { By } from '@angular/platform-browser';
 
 describe('ButtonComponent', () => {
   let component: ButtonComponent;
   let fixture: ComponentFixture<ButtonComponent>;
+
+  const getButton = () => fixture.debugElement.query(By.css('.button'))
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -27,8 +30,8 @@ describe('ButtonComponent', () => {
     describe('onClick', () => {
       it('should call onClick function when button is clicked', () => {
         const onClickSpy = jest.spyOn(component, 'onClick');
-        const buttonElement = document.querySelector('.button') as HTMLButtonElement
-        buttonElement.click()
+        const buttonElement = getButton()
+        buttonElement.nativeElement.click()
 
         expect(onClickSpy).toHaveBeenCalled()
       })
