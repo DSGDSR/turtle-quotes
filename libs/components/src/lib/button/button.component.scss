@@ -1,0 +1,35 @@
+@import '../../../../shared/src/lib/styles/tools';
+
+:host {
+    a {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    a,
+    button {
+        background-color: $primary;
+        color: $text;
+        border-radius: $border-radius;
+        font-weight: 500;
+        font-size: 1em;
+
+        &:hover {
+            transition-property: opacity;
+            opacity: .85;
+            transition-duration: $hover-transition;
+        }
+    }
+
+    .small {
+        padding: .4em .7em;
+    }
+
+    .default {
+        padding: .7em 1em;
+    }
+
+    .large {
+        padding: .9em 1.2em;
+    }
+}
